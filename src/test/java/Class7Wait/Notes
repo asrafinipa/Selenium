@@ -1,0 +1,13 @@
+
+Implicit wait is a global setting that applies to all elements in a Selenium script.
+It tells the web driver to wait for a certain amount of time before throwing an exception if the element is not found.
+
+Explicit wait is a more flexible wait that allows us to wait for a specific condition to be met
+before continuing test execution. We can define the condition, such as the presence or absence of an element,
+using the ExpectedConditions class. An exception is thrown if the condition is not met within the specified time.
+
+differences:
+The main difference between implicit wait and explicit wait is that implicit wait applies to all elements,
+while explicit wait applies to a specific element or condition. Implicit wait is easier to use,
+but it may cause unnecessary waiting or miss some elements that load later.
+Explicit wait is more precise, but it requires more code and may cause performance issues if used too frequently.
